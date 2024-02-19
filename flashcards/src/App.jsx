@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import React, { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
@@ -12,9 +12,9 @@ function App() {
   const [colorfirst, Setcolorfirst] = useState(false)
   
   return (
-    <div className='h-screen bg-black flex flex-col'>
-      <div className="flex flex-1/6">
-        <Firstbox textfirst={textfirst} Settextfirst={Settextfirst} colorfirst={colorfirst} Setcolorfirst={Setcolorfirst} />  
+    <div  className='h-screen flex flex-col' style={{border: "10px solid red"}}>
+       <div className="flex flex-1/2 text-black">
+             <Firstbox textfirst={textfirst} Settextfirst={Settextfirst} colorfirst={colorfirst} Setcolorfirst={Setcolorfirst} />  
       
       </div>
     </div>
