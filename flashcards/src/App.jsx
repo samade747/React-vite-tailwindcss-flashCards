@@ -8,10 +8,16 @@ import Firstbox from './components/Firstbox'
 
 function App() { 
 
+  const [textfirst, Settextfirst] = useState(false)
+  const [colorfirst, Setcolorfirst] = useState(false)
+  
   return (
-    <>
-      <Firstbox />
-    </>
+    <div className='h-screen bg-black flex flex-col'>
+      <div className="flex flex-1/6">
+        <Firstbox textfirst={textfirst} Settextfirst={Settextfirst} colorfirst={colorfirst} Setcolorfirst={Setcolorfirst} />  
+      
+      </div>
+    </div>
   )
 }
 
