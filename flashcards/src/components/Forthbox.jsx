@@ -13,7 +13,7 @@ const Forthbox = ({ textforth, Settextforth, colorforth, Setcolorforth }) => {
         Setcolorforth(false)
     }
     return (
-    <div className="w-6/12 h-300 flex items-center justify-center"
+    <div className="w-10/12 h-300 flex items-center justify-center"
      onMouseOver={changingColorHandler} onMouseLeave={revertColorHandler} 
         style={{
             height: "300px",

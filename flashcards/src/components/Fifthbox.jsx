@@ -19,6 +19,7 @@ const Fifthbox = ({ textfifth, Settextfifth, colorfifth, Setcolorfifth }) => {
             height: "300px",
             textAlign: "center",
             borderRadius: "10px",
+            padding: "10px",
             backgroundColor: colorfifth ? "red" : "grey",
             color: colorfifth ? "red": "white"
             }}>           
