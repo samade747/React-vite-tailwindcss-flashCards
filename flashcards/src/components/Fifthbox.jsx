@@ -2,15 +2,15 @@ import React from "react";
 import { useState } from "react";
 
 
-const Forthbox = ({ textforth, Settextforth, colorforth, Setcolorforth }) => {
+const Fifthbox = ({ textfifth, Settextfifth, colorfifth, Setcolorfifth }) => {
     const changingColorHandler = () => {
-        Settextforth(true)
-        Setcolorforth(true)
+        Settextfifth(true)
+        Setcolorfifth(true)
     }
 
     const revertColorHandler = () => {
-        Settextforth(false)
-        Setcolorforth(false)
+        Settextfifth(false)
+        Setcolorfifth(false)
     }
     return (
     <div className="w-6/12 h-300 flex items-center justify-center"
@@ -19,14 +19,14 @@ const Forthbox = ({ textforth, Settextforth, colorforth, Setcolorforth }) => {
             height: "300px",
             textAlign: "center",
             borderRadius: "10px",
-            backgroundColor: colorforth ? "red" : "grey",
-            color: colorforth ? "red": "white"
+            backgroundColor: colorfifth ? "red" : "grey",
+            color: colorfifth ? "red": "white"
             }}>           
-            <p className="text-white">{textforth ? "Props" : "How to pass data from parent to child components?"}</p>            
+            <p className="text-white">{textfifth ? "useState hook" : "What's the name of the syntax we use to describe a UI in React?"}</p>            
     </div>
     );
 };  
 
 
 
-export default Forthbox;
+export default Fifthbox;

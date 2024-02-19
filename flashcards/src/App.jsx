@@ -6,6 +6,7 @@ import Firstbox from './components/Firstbox'
 import Secondbox from './components/Secondbox'
 import Thirdbox from './components/Thirdbox'
 import Forthbox from './components/Forthbox'
+import Fifthbox from './components/Fifthbox'
 
  
 
@@ -26,6 +27,9 @@ function App() {
   const [textforth, Settextforth] = useState(false)
   const [colorforth, Setcolorforth] = useState(false)
 
+  const [textfifth, Settextfifth] = useState(false)
+  const [colorfifth, Setcolorfifth] = useState(false)
+
 
   const changingColorHandler = () => {
     
@@ -44,6 +48,9 @@ const revertColorHandler = () => {
              <Secondbox textsecond={textsecond} Settextsecond={Settextsecond} colorsecond={colorsecond} Setcolorsecond={Setcolorsecond} />        
              <Thirdbox textthird={textthird} Settextthird={Settextthird} colorthird={colorthird} Setcolorthird={Setcolorthird} />        
              <Forthbox textforth={textforth} Settextforth={Settextforth} colorforth={colorforth} Setcolorforth={Setcolorforth} />        
+      </div>
+      <div className="flex text-black gap-2 m-2 items-center justify-center">
+             <Fifthbox textfifth={textfifth} Settextfifth={Settextfifth} colorfifth={colorfifth} Setcolorfifth={Setcolorfifth} />        
       </div>
     </div>
   )
