@@ -7,11 +7,23 @@ const Firstbox = ({ textfirst, Settextfirst, colorfirst, Setcolorfirst }) => {
         Settextfirst(true)
         Setcolorfirst(true)
     }
+
+    const revertColorHandler = () => {
+        Settextfirst(false)
+        Setcolorfirst(false)
+    }
+
     return (
-        <div className="w-2/6 h-300flex items-center justify-center border border-gray-500" onMouseEnter={changingColorHandler}
-        style={{height: "300px", backgroundColor: colorfirst ? "blue" : "black" }}>           
+    <div className="w-2/6 h-300 flex items-center justify-center"
+     onMouseOver={changingColorHandler} onMouseLeave={revertColorHandler} 
+        style={{
+            height: "300px",
+            borderRadius: "10px",
+            backgroundColor: colorfirst ? "red" : "grey",
+            color: colorfirst ? "red": "white" 
+            }}>           
             <p className="text-white">{textfirst ? "Javascript" : "What language is React based on?"}</p>            
-        </div>
+    </div>
     );
 };  
 
