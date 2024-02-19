@@ -18,6 +18,7 @@ const Secondbox = ({ textsecond, Settextsecond, colorsecond, Setcolorsecond }) =
         style={{
             height: "300px",
             borderRadius: "10px",
+            textAlign: "center",
             backgroundColor: colorsecond ? "red" : "grey",
             color: colorsecond ? "red": "white"
             }}>           

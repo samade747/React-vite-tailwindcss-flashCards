@@ -14,11 +14,12 @@ const Firstbox = ({ textfirst, Settextfirst, colorfirst, Setcolorfirst }) => {
     }
 
     return (
-    <div className="w-2/6 h-300 flex items-center justify-center"
+    <div className="w-4/12 h-300 flex items-center justify-center"
      onMouseOver={changingColorHandler} onMouseLeave={revertColorHandler} 
         style={{
             height: "300px",
             borderRadius: "10px",
+            textAlign: "center",
             backgroundColor: colorfirst ? "red" : "grey",
             color: colorfirst ? "red": "white" 
             }}>           
